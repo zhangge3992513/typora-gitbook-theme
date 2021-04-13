@@ -520,6 +520,10 @@ table tr td:last-child {
 .CodeMirror.cm-s-typora-default .CodeMirror-activeline-background {
   background-color: var(--codeboxes-lighter);
 }
+/* ZG: fix mermaid中代码左边出去了, 看不到头几个字符 */
+.md-fences.md-end-block.md-diagram.md-fences-with-lineno.ty-contain-cm.modeLoaded.md-focus .CodeMirror-sizer{
+    margin-left: 30px;
+}
 
 .cm-s-inner .CodeMirror-cursor {
   color: white;
